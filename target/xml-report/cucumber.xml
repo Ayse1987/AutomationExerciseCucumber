@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="212.772">
+    <testcase classname="verification in checkout page" name="E2E user can download invoice after purchase" time="211.866">
+        <failure message="" type="java.lang.AssertionError">
+            <![CDATA[Given navigate to baseUrl...................................................passed
+And verify that home page is visible successfully...........................passed
+When click on Signup Login button...........................................passed
+And fill email, password and click Login button.............................passed
+And verify that Logged in as username is visible............................passed
+When add products to cart...................................................passed
+And click Cart button and verify that products are visible in cart..........passed
+And click Proceed To Checkout...............................................passed
+Then verify Address Details and Review Your Order...........................passed
+And enter description in comment text area and click Place Order............passed
+And enter payment details: Name on Card, Card Number, CVC, Expiration date..passed
+And click Pay and Confirm Order button......................................passed
+Then verify success message Your order has been placed successfully!........passed
+And click Download Invoice button and verify invoice is downloaded successfully..failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.CheckOutStepDef.click_download_invoice_button_and_verify_invoice_is_downloaded_successfully(CheckOutStepDef.java:38)
+	at ✽.click Download Invoice button and verify invoice is downloaded successfully.(file:///C:/Users/Ayse/IdeaProjects/AutomationExerciseCucumber/./src/test/resources/features/ui/CheckOut.feature:53)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
+ertTrue(Assert.java:53)
+	at stepdefinitions.CheckOutStepDef.click_download_invoice_button_and_verify_invoice_is_downloaded_successfully(CheckOutStepDef.java:38)
+	at ✽.click Download Invoice button and verify invoice is downloaded successfully.(file:///C:/Users/Ayse/IdeaProjects/AutomationExerciseCucumber/./src/test/resources/features/ui/CheckOut.feature:37)
+]]>
+        </failure>
+    </testcase>
+</testsuite>

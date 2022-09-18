@@ -1,0 +1,269 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 26429002700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "navigate to baseUrl",
+            "match": {
+              "location": "stepdefinitions.RegistrationStepDef.navigate_to_base_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 165004000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "verify that home page is visible successfully",
+            "match": {
+              "location": "stepdefinitions.RegistrationStepDef.verify_that_home_page_is_visible_successfully()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-09-14T17:47:52.689Z",
+        "line": 41,
+        "name": "E2E user can download invoice after purchase",
+        "description": "",
+        "id": "verification-in-checkout-page;e2e-user-can-download-invoice-after-purchase",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 20926017100,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "click on Signup Login button",
+            "match": {
+              "location": "stepdefinitions.RegistrationStepDef.click_on_signup_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 25384997800,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "fill email, password and click Login button",
+            "match": {
+              "location": "stepdefinitions.PlaceOrderStepDef.fillEmailPasswordAndClickLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 135004100,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "verify that Logged in as username is visible",
+            "match": {
+              "location": "stepdefinitions.RegistrationStepDef.verify_that_logged_in_as_username_is_visible()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28268997700,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "add products to cart",
+            "match": {
+              "location": "stepdefinitions.PlaceOrderStepDef.add_products_to_cart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 306002900,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "click Cart button and verify that products are visible in cart",
+            "match": {
+              "location": "stepdefinitions.ProductsStepDef.click_cart_button_and_verify_that_products_are_visible_in_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18076000200,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "click Proceed To Checkout",
+            "match": {
+              "location": "stepdefinitions.PlaceOrderStepDef.click_proceed_to_checkout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 217999500,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "verify Address Details and Review Your Order",
+            "match": {
+              "location": "stepdefinitions.PlaceOrderStepDef.verify_address_details_and_review_your_order()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1375998600,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "enter description in comment text area and click Place Order",
+            "match": {
+              "location": "stepdefinitions.PlaceOrderStepDef.enter_description_in_comment_text_area_and_click_place_order()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8249001300,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "enter payment details: Name on Card, Card Number, CVC, Expiration date",
+            "match": {
+              "location": "stepdefinitions.PlaceOrderStepDef.enter_payment_details_name_on_card_card_number_cvc_expiration_date()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10079012500,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "click Pay and Confirm Order button",
+            "match": {
+              "location": "stepdefinitions.PlaceOrderStepDef.click_pay_and_confirm_order_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17370999300,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "verify success message Your order has been placed successfully!",
+            "match": {
+              "location": "stepdefinitions.PlaceOrderStepDef.verify_success_message_your_order_has_been_placed_successfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat stepdefinitions.CheckOutStepDef.click_download_invoice_button_and_verify_invoice_is_downloaded_successfully(CheckOutStepDef.java:38)\r\n\tat ✽.click Download Invoice button and verify invoice is downloaded successfully.(file:///C:/Users/Ayse/IdeaProjects/AutomationExerciseCucumber/./src/test/resources/features/ui/CheckOut.feature:53)\r\n",
+              "duration": 54377001900,
+              "status": "failed"
+            },
+            "line": 53,
+            "name": "click Download Invoice button and verify invoice is downloaded successfully.",
+            "match": {
+              "location": "stepdefinitions.CheckOutStepDef.click_download_invoice_button_and_verify_invoice_is_downloaded_successfully()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EndToEnd"
+          }
+        ]
+      }
+    ],
+    "name": "verification in checkout page",
+    "description": "",
+    "id": "verification-in-checkout-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ui/CheckOut.feature",
+    "tags": []
+  }
+]e(Assert.java:53)\r\n\tat stepdefinitions.CheckOutStepDef.click_download_invoice_button_and_verify_invoice_is_downloaded_successfully(CheckOutStepDef.java:38)\r\n\tat ✽.click Download Invoice button and verify invoice is downloaded successfully.(file:///C:/Users/Ayse/IdeaProjects/AutomationExerciseCucumber/./src/test/resources/features/ui/CheckOut.feature:37)\r\n",
+              "duration": 59316995700,
+              "status": "failed"
+            },
+            "line": 37,
+            "name": "click Download Invoice button and verify invoice is downloaded successfully.",
+            "match": {
+              "location": "stepdefinitions.CheckOutStepDef.click_download_invoice_button_and_verify_invoice_is_downloaded_successfully()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 999900,
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "click Continue button in checkout",
+            "match": {
+              "location": "stepdefinitions.CheckOutStepDef.clickContinueButtonInCheckout()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1003100,
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "verify Delete Account button is visible",
+            "match": {
+              "location": "stepdefinitions.RegistrationStepDef.verifyDeleteAccountButtonIsVisible()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CheckOut"
+          },
+          {
+            "name": "@EndToEnd"
+          }
+        ]
+      }
+    ],
+    "name": "verification in checkout page",
+    "description": "",
+    "id": "verification-in-checkout-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ui/CheckOut.feature",
+    "tags": [
+      {
+        "name": "@CheckOut",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
