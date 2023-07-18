@@ -1,4 +1,4 @@
-@Product
+
 Feature: Verify and search products
 
   Background:
@@ -30,6 +30,7 @@ Feature: Verify and search products
     When click View Cart button
     Then Verify that product is displayed in cart page with exact quantity
 
+  @Product
   Scenario: TC20 search product and verify in the cart
     When click on Products button
     Then verify user is navigated to ALL PRODUCTS page successfully

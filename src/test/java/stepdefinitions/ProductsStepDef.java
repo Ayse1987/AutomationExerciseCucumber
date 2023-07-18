@@ -136,16 +136,17 @@ public class ProductsStepDef {
     public void verify_all_the_products_related_to_search_are_visible() {
         int count=0;
         for(WebElement each:allProductsPage.searchedProductList){
-            if(each.getText().equalsIgnoreCase("top")){
+            System.out.println(each.getText());
+            if(each.getText().contains("top")){
                 continue;
             }else{
                 count++;
             }
         }
         if(count>0){
-            Assert.assertTrue(true);
-        }else{
             Assert.assertTrue(false);
+        }else{
+            Assert.assertTrue(true);
         }
     }
     //complete the following step and te assertion

@@ -33,7 +33,9 @@ public class ContactUsStepDef {
         contactUsPage.messageTextBox.sendKeys(ConfigReader.getProperty("message"));
     }
     @Then("upload file")
-    public void upload_file() {
+    public
+    void upload_file() {
+
         contactUsPage.uploadFile.sendKeys(Path.filePath);
 
     }

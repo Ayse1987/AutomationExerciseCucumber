@@ -48,6 +48,7 @@ public class CartstepDef {
     public void click_on_any_category_link_under_women_category_for_example_dress() {
         Actions actions=new Actions(Driver.getDriver());
         actions.moveToElement(homePage.dressCategory).click();
+        ReusableMethods.waitFor(3);
     }
     @Then("verify that category page is displayed and confirm text WOMEN - TOPS PRODUCTS")
     public void verify_that_category_page_is_displayed_and_confirm_text_women_tops_products() {
@@ -58,6 +59,13 @@ public class CartstepDef {
     public void on_left_side_bar_click_on_any_sub_category_link_of_men_category() {
         dressCategoryPage.menCategory.click();
         dressCategoryPage.tShirtCategory.click();
+        /*if(Driver.getDriver().findElement(By.xpath("//*[@id=\"creative\"]/script/text()")).isDisplayed()){
+            ReusableMethods.waitFor(3);
+        Driver.getDriver().switchTo().frame(Driver.getDriver().findElement(By.xpath("//*[@id=\"creative\"]/script/text()")));
+        ReusableMethods.waitFor(3);
+        Driver.getDriver().findElement(By.xpath("//*[@id=\"dismiss-button\"]/div/span")).click();}
+
+         */
     }
     @Then("verify that user is navigated to that category page")
     public void verify_that_user_is_navigated_to_that_category_page() {
